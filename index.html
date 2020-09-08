@@ -36,7 +36,7 @@
                 <li class="nav-item"><a href=#home>Welcome</a></li>
                 <li class="nav-item"><a href=#why>Portfolio</a></li>
                 <li class="nav-item"><a href=#model>My Story</a></li>
-                <li class="nav-item"><a href=#results>Experience</a></li>
+                <li class="nav-item"><a href=#contact>Experience</a></li>
                 <li class="nav-item"><a href=#demon>Let's chat</a></li>
                 <!-- <li class="nav-item"><a href=#next>Next Steps</a></li>
                 <li class="nav-item"><a href=#contact>Contact</a></li> -->
@@ -47,39 +47,47 @@
 
             <div class="intro-slide aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
                 <div class="intro-slide-content aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
-                    <!-- <img src="assets/abcd.gif" />                 -->
                 </div>
-                
             </div>
 
-            <!-- <div id="why" class="main-welcome aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                <div class="welcome aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                    <p>Sign language is a main means of communication for the 
-                        Deaf, hard of hearing, and non-verbal communities.</p> 
-                        
-                    <p>By transcribing sign language for non-signers we can 
-                        improve accessibility for those that sign.</p>
-                </div>
-            </div> -->
-
-            <div id="why" class="main-welcome slideshow-container">
+            <div id="why" class="main-welcome slideshow-container aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000">
                 
                 <div class="mySlides fade">
                     <img src="assets/demo.gif" >
-                    <a href="https://github.com/angelphanth/alphabet_asl"><div class="caption">
+                    <div class="caption">
                         <h4>PROJECT</h4>
                         <h1>Deep Learning to Classify ASL Letters from a Webcam Stream</h1>
-                    </div></a>
+                        <h3><a href="https://github.com/angelphanth/alphabet_asl">LEARN MORE</a></h3>
+                    </div>
                 </div>
             
                 <div class="mySlides fade">
                     <img src="assets/virtuo.gif">
-                    <a href="https://github.com/tomkeith/Remote-Employee-Satisfaction"><div class="caption">3-DAY MICROSOFT x BRAINSTATION HACKATHON: HR ANALYTICS DASHBOARD</div></a>
+                    <div class="caption">
+                        <h4>HACKATHON</h4>
+                        <h1>VirtuOffice Analytics Dashboard</h1>
+                        <h2>3-Day Microsoft x BrainStation Hackathon</h2>
+                        <h3><a href="https://github.com/tomkeith/Remote-Employee-Satisfaction">LEARN MORE</a></h3>
+                    </div>
                 </div>
             
                 <div class="mySlides fade">
                     <img src="assets/rps.gif">
-                    <a href="https://github.com/angelphanth/rps"><div class="caption">CHALLENGE YOUR COMPUTER TO A GAME OF ROCK-PAPER-SCISSORS USING YOUR WEBCAM</div></a>
+                    <div class="caption">
+                        <h4>PASSION PROJECT</h4>
+                        <h1>Ultimate Social Distancing Activity</h1>
+                        <h2>Challenge Your Computer to a Game of Rock-Paper-Scissors via Webcam</h2>
+                        <h3><a href="https://github.com/angelphanth/rps">LEARN MORE</a></h3>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="assets/intro-tile.png" >
+                    <div class="caption">
+                        <h4>PROJECT</h4>
+                        <h1>Personal Website</h1>
+                        <h3><a href="https://github.com/angelphanth/portfolio">THE CODE</a></h3>
+                    </div>
                 </div>
             
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -92,94 +100,58 @@
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
             </div>
 
             <div class='space'></div>
 
             <div id="model" class="main-welcome aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
                 <div class="how-content aos-init aos-animate" data-aos="fade-down">
+                    <img src="assets/IMG_2572.jpeg" alt="" /> 
                     <div class="how-content-text">
-                        <h3> Multiple Convolutional Neural Networks (CNNs) were 
-                            trained on a set of ASL images.
-                        </h3> 
-                        <p>The CNNs were then tested on ASL:
-                        </p> 
-                        <p>   (1) From other images
-                        </p> 
-                        <p>   (2) Streamed from a webcam
+                        <p>I pivoted from a PhD in Neuromechanics.</p> 
+
+                        <p>A large contributor to my cold feet: Having my first taste of coding during data analysis for my MSc.</p>
+
+                        <p>A cautious career pivot, I first deferred my PhD offer to work with data, but in clinical settings.
+                            Turns out that patients experiencing high-risk pregnancies (Sinai Health Systems) 
+                            or requiring gum tissue grafts (Dr. Peter C. Fritz Dentistry Professional Corporation) 
+                            have more pertinent interests than deciphering wordy study findings.</p>
+                            
+                        <p>The takeaway: Insights, no matter how impactful, 
+                            won't get activated if the people that would benefit can't make sense of them.</p> 
+
+                         <p>Fast forward to me taking the plunge into my career change and completing my Diploma in Data Science. 
+                            I take what I learned working in healthcare into everything I do. As a data science teaching assistant, 
+                            I geared my code-alongs and student hours to the intended audience's needs. 
+                            
+                            I am eager to support a team in communicating data effectively to activate insights and help others. 
                         </p> 
                     </div>
 
-                    <img src="{{url_for('static', filename='img/asl_kaggle.png')}}" alt="" />  
+                     
                 </div>
             </div>
 
-            <div id="results" class="main-welcome aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
-                <div class="results-content aos-init aos-animate" data-aos="fade-down">
-                    <div>
-                        <h3> CNNs
-                            <h3> 
-                        <p> VGG16
-                        <p> 
-                        <p>VGG19
-                        </p> 
-                        <p>Xception
-                        </p> 
-                        <p>InceptionResNetV2
-                        </p> 
-                    </div>
-                    <div>
-                        <h3> Accuracy
-                            <h3> 
-                        <p> 99.9 %
-                        <p>
-                        <p>99.9 %
-                        </p>
-                        <p>98.6 %
-                        </p>
-                        <p>98.5 %
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            <div id="demon" class="aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">                  
-                <div class="demoimg">
-                    <div class="special">
-                        <img style="border-radius:15px;margin-left:5%;margin-right:auto;height:700px;" src="{{ url_for('video_feed') }}">
-                        <!-- <img src="../static/assets/abcd.gif"> -->
-                    </div>
-                </div>
-            </div>
-
-           
-            <div id="next" class="main-welcome aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
-                <div class="next-content aos-init aos-animate" data-aos="fade-down">
-                    <div class="next-content-text">
-                        <h3>- Train SqueezeNet CNN
-                        </h3> 
-                        <h3>- Implement a hand detection model
-                        </h3> 
-                    </div>
-
-                    <img src="{{url_for('static', filename='img/track.gif')}}" /> 
-                </div>
-            </div>
-
-            
-            <div id="contact" class="main-welcome aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
+            <div id="contact" class="contact main-welcome aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
                 <div class="contact-content aos-init aos-animate" data-aos="fade-down">
-                    <div>
-                        <h1> /angelphanth
-                        <h1> 
-                    </div>
+                    <h3>Check out my LinkedIn where I outline my experiences in detail:</h3>
+                    <h1><a href="https://www.linkedin.com/in/angelphanth/">linkedin.com/in/angelphanth
+                    </a><h1> 
+                </div>
+            </div>
+
+            <div id="demon" class="contact main-welcome aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
+                <div class="contact-content aos-init aos-animate" data-aos="fade-down">
+                    
+                    <h1><a href="https://www.linkedin.com/in/angelphanth/">/angelphanth</a><h1> 
+                    <h1>angel.phanth@gmail.com<h1> 
                 </div>
             </div>
             
-        </div>
 
         <footer class="footer">
-            <div class="thanks">Thank you for visiting!</div>
+            <div class="thanks">Thank you for stopping by!</div>
             <div class="up-again">
                 <a href=#home>
                     To the top
