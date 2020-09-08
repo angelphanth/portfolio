@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANGELphanthanourak</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Serif:wght@200;300&family=Rubik:wght@300;400;600&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="nav-icon">
+            <i class="fa fa-bars"></i>
+        </div>
+
+        <section id="home" class="aos-init aos-animate" data-aos="zoom-in">
+            <div class="title">
+                <h1><b>angel</b>phanthanourak</h1>
+                <h2>
+                    Welcome to my site! A Healthcare Researcher turned aspiring Data Scientist, 
+                </h2>
+                <h2>I like to learn and share what I learn with others.</h2>
+            </div>
+        </section>
+
+        <aside class="nav">
+            <div class="nav-close-icon">
+                <i class="fa fa-window-minimize"></i>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href=#home>Welcome</a></li>
+                <li class="nav-item"><a href=#why>Portfolio</a></li>
+                <li class="nav-item"><a href=#model>My Story</a></li>
+                <li class="nav-item"><a href=#results>Experience</a></li>
+                <li class="nav-item"><a href=#demon>Let's chat</a></li>
+                <!-- <li class="nav-item"><a href=#next>Next Steps</a></li>
+                <li class="nav-item"><a href=#contact>Contact</a></li> -->
+            </ul>
+        </aside>
+
+        <div class="main aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
+
+            <div class="intro-slide aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
+                <div class="intro-slide-content aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
+                    <!-- <img src="assets/abcd.gif" />                 -->
+                </div>
+                
+            </div>
+
+            <!-- <div id="why" class="main-welcome aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
+                <div class="welcome aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
+                    <p>Sign language is a main means of communication for the 
+                        Deaf, hard of hearing, and non-verbal communities.</p> 
+                        
+                    <p>By transcribing sign language for non-signers we can 
+                        improve accessibility for those that sign.</p>
+                </div>
+            </div> -->
+
+            <div id="why" class="main-welcome slideshow-container">
+                
+                <div class="mySlides fade">
+                    <img src="assets/demo.gif" >
+                    <a href="https://github.com/angelphanth/alphabet_asl"><div class="caption">
+                        <h4>PROJECT</h4>
+                        <h1>Deep Learning to Classify ASL Letters from a Webcam Stream</h1>
+                    </div></a>
+                </div>
+            
+                <div class="mySlides fade">
+                    <img src="assets/virtuo.gif">
+                    <a href="https://github.com/tomkeith/Remote-Employee-Satisfaction"><div class="caption">3-DAY MICROSOFT x BRAINSTATION HACKATHON: HR ANALYTICS DASHBOARD</div></a>
+                </div>
+            
+                <div class="mySlides fade">
+                    <img src="assets/rps.gif">
+                    <a href="https://github.com/angelphanth/rps"><div class="caption">CHALLENGE YOUR COMPUTER TO A GAME OF ROCK-PAPER-SCISSORS USING YOUR WEBCAM</div></a>
+                </div>
+            
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            <div class='space'></div>
+
+            <div id="model" class="main-welcome aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
+                <div class="how-content aos-init aos-animate" data-aos="fade-down">
+                    <div class="how-content-text">
+                        <h3> Multiple Convolutional Neural Networks (CNNs) were 
+                            trained on a set of ASL images.
+                        </h3> 
+                        <p>The CNNs were then tested on ASL:
+                        </p> 
+                        <p>   (1) From other images
+                        </p> 
+                        <p>   (2) Streamed from a webcam
+                        </p> 
+                    </div>
+
+                    <img src="{{url_for('static', filename='img/asl_kaggle.png')}}" alt="" />  
+                </div>
+            </div>
+
+            <div id="results" class="main-welcome aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
+                <div class="results-content aos-init aos-animate" data-aos="fade-down">
+                    <div>
+                        <h3> CNNs
+                            <h3> 
+                        <p> VGG16
+                        <p> 
+                        <p>VGG19
+                        </p> 
+                        <p>Xception
+                        </p> 
+                        <p>InceptionResNetV2
+                        </p> 
+                    </div>
+                    <div>
+                        <h3> Accuracy
+                            <h3> 
+                        <p> 99.9 %
+                        <p>
+                        <p>99.9 %
+                        </p>
+                        <p>98.6 %
+                        </p>
+                        <p>98.5 %
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="demon" class="aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">                  
+                <div class="demoimg">
+                    <div class="special">
+                        <img style="border-radius:15px;margin-left:5%;margin-right:auto;height:700px;" src="{{ url_for('video_feed') }}">
+                        <!-- <img src="../static/assets/abcd.gif"> -->
+                    </div>
+                </div>
+            </div>
+
+           
+            <div id="next" class="main-welcome aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
+                <div class="next-content aos-init aos-animate" data-aos="fade-down">
+                    <div class="next-content-text">
+                        <h3>- Train SqueezeNet CNN
+                        </h3> 
+                        <h3>- Implement a hand detection model
+                        </h3> 
+                    </div>
+
+                    <img src="{{url_for('static', filename='img/track.gif')}}" /> 
+                </div>
+            </div>
+
+            
+            <div id="contact" class="main-welcome aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
+                <div class="contact-content aos-init aos-animate" data-aos="fade-down">
+                    <div>
+                        <h1> /angelphanth
+                        <h1> 
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <footer class="footer">
+            <div class="thanks">Thank you for visiting!</div>
+            <div class="up-again">
+                <a href=#home>
+                    To the top
+                </a>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        const menuIconEl = $('.nav-icon');
+        const sidenavEl = $('.nav');
+        const sidenavCloseEl = $('.nav-close-icon');
+
+        // Add and remove provided class names
+        function toggleClassName(el, className) {
+            if (el.hasClass(className)) {
+            el.removeClass(className);
+            } else {
+            el.addClass(className);
+            }
+        }
+        // Open the side nav on click
+        menuIconEl.on('click', function() {
+            toggleClassName(sidenavEl, 'active');
+        });
+
+        // Close the side nav on click
+        sidenavCloseEl.on('click', function() {
+            toggleClassName(sidenavEl, 'active');
+        });
+
+        var $root = $('html, body');
+
+        $('a[href^="#"]').click(function () {
+            $root.animate({
+                scrollTop: $( $.attr(this, 'href') ).offset().top
+            }, 500);
+
+            return false;
+        });
+        
+        
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            // Activate Carousel
+            $("#myCarousel").carousel();
+
+            // Enable Carousel Indicators
+            $(".item1").click(function () {
+                $("#myCarousel").carousel(0);
+            });
+            $(".item2").click(function () {
+                $("#myCarousel").carousel(1);
+            });
+            $(".item3").click(function () {
+                $("#myCarousel").carousel(2);
+            });
+            $(".item4").click(function () {
+                $("#myCarousel").carousel(3);
+            });
+
+            // Enable Carousel Controls
+            $(".left").click(function () {
+                $("#myCarousel").carousel("prev");
+            });
+            $(".right").click(function () {
+                $("#myCarousel").carousel("next");
+            });
+        });
+    </script>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+
+    </script>
+
+</body>
+</html>
