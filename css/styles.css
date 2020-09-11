@@ -35,6 +35,7 @@ a {
     justify-content: center;
     border-radius: 50%;
     z-index: 2;
+    opacity: 0.7;
     cursor: pointer;
     padding: 10px;
     background-color: lightgrey;
@@ -99,6 +100,7 @@ a {
     height: 50vh;
     width: 100%;
     opacity: 0.75;   
+    transition: all 1s ease-in-out;
 }
 
 .title {
@@ -147,6 +149,7 @@ a {
 
 #home:hover {
     opacity:1;
+    transition: all 1s ease-in-out;
 }
 
 .heading {
@@ -166,32 +169,9 @@ a {
 }
 
 .main-welcome {
-    /* margin: 0;  */
-    /* padding: 0;  */
     display: flex;
     flex-direction: column;
-    align-content: center;
     justify-content: center; 
-    /* height: 1500px;  */
-}
-
-.intro-slide {
-    /* padding: 200px;  */
-    /* padding: 0;  */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; 
-    height: 1000px; 
-}
-
-.intro-slide-content {
-    display: flex; 
-    flex-direction: column;
-    margin-top: 20px;
-    margin-left: 200px;
-    max-height: 800px;
-    width: 50%;
 }
 
 .welcome {
@@ -228,63 +208,78 @@ a {
   
 .main p {
     font-size: 1em;
-    margin: 20px 20px;
-    font-weight: normal;
+    margin: 20px 0px;
     max-width: 90%;
 }
 
 #model {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
-    height: 2500px; 
+    align-items: flex-start; 
 }
 
 .how-content {
-    display: flex; 
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-color: white;
+    width: 100%; 
     color: black;
-    border-radius: 15px;
     font-size: 1.5em; 
-    font-weight: bolder;
-    height:1500px;
+    min-height:2500px;
+}
+
+.titles {
+    color: lightgray;
+    margin:0;
+    padding:0;
 }
 
 .how-content img {
-    width: 400px;
+    max-width: 450px;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 2%;
     height: auto;
     opacity: 0.8;
-    /* border-radius: 15px; */
+    transition: all 1s ease-in-out;
 }
 
 .how-content img:hover {
     opacity:1;
+    transition: all 1s ease-in-out;
 }
 
 .how-content-text {
-    width: 60%;
-    margin-right: 2%;
+    margin: 2%;
+}
+
+.how-content-text h4 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
 }
 
 .contact {
     display: flex;
     justify-content: center; 
     align-items: center;
-    height: 100vh; 
-    font-family: 'Rubik', sans-serif;
-    text-align: end;
-}
-
-.contact a {
-    text-decoration: underline;
+    height: 100vh;
 }
 
 .contact-content {
     color: black;
-    font-size: 1vw; 
+    font-size: 2em; 
+    width: 100%;
+    text-align: center;
+}
+
+.contact-content h3 {
+    font-size: 1em;
+}
+
+.contact a {
+    text-decoration: underline;
+    font-family: 'Rubik', sans-serif;
+}
+
+.contact-content a:hover {
+    color: lightgray; 
 }
 
 .footer {
@@ -301,6 +296,10 @@ a {
     text-decoration: underline dashed;
 }
 
+.up-again:hover {
+    color:white;
+}
+
 /* Carousel */
 .mySlides {
     height:100%;
@@ -314,10 +313,12 @@ a {
     object-fit: cover;
     overflow: hidden;
     opacity: 0.8;
+    transition: all 1s ease-in-out;
 }
 
 .mySlides img:hover {
     opacity: 1;
+    transition: all 1s ease-in-out;
 }
 
 /* Slideshow container */
@@ -371,6 +372,7 @@ a {
     height: 100%;
     text-align: start;
     opacity: 0.5;
+    transition: all 1s ease-in-out;
 }
 
 .caption h1 {
@@ -386,6 +388,7 @@ a {
 
 .caption:hover {
     opacity:0.9;
+    transition: all 1s ease-in-out;
 }
 
 /* The dots/bullets/indicators */
@@ -424,7 +427,7 @@ a {
 
 
 /* When tablet */
-@media (min-width: 479px) and (max-width: 991px) {
+@media (min-width: 479px) and (max-width: 1030px) {
 
     .contact-content h1 {
         font-size: 25px; 
@@ -433,7 +436,11 @@ a {
 
     .contact-content h3 {
         font-size:20px;
-        word-wrap: wrap;
+        word-wrap: break-word;
+    }
+
+    .how-content img {
+        float: none;
     }
 
 }
@@ -465,6 +472,10 @@ a {
 
     #home::before {    
         background-size: cover;
+    }
+
+    .slideshow-container {
+        height:40vh;
     }
 
     .caption h4 {
