@@ -128,8 +128,9 @@ a {
     font-size: 1.5em;
     margin: 0.5% 10px;
     font-weight: normal;
+    text-shadow: 0.2px 0.2px rgb(2, 29, 70);
     max-width: 1000px;
-    text-align:end;
+    text-align: end;
 }
   
 #home::before {    
@@ -144,11 +145,16 @@ a {
       bottom: 0px;
       left: 0px;
       /* width: 50vw; */
-      /* opacity: 0.75; */
+      opacity: 0.75;
 }
 
 #home:hover {
-    opacity:1;
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+
+#home h1:hover {
+    font-weight: bolder;
     transition: all 1s ease-in-out;
 }
 
@@ -165,7 +171,7 @@ a {
 }
 
 .space {
-    height: 1000px;
+    height: 100vh;
 }
 
 .main-welcome {
@@ -273,7 +279,7 @@ a {
     font-size: 1em;
 }
 
-.contact a {
+.contact-content a {
     text-decoration: underline;
     font-family: 'Rubik', sans-serif;
 }
@@ -470,12 +476,20 @@ a {
         opacity: 1;
     }
 
+    #title h2 {
+        text-shadow: 1px 1px rgb(11, 29, 0);
+    }
+
     #home::before {    
         background-size: cover;
     }
 
     .slideshow-container {
         height:40vh;
+    }
+
+    .caption {
+        opacity: 0.9;
     }
 
     .caption h4 {
