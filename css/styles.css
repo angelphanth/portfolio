@@ -387,9 +387,21 @@ a {
 }
 
 .caption h3 {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: rgb(6, 65, 53);
     font-size: 18px;
+}
+
+.caption a {
+    border-bottom:0.2em solid rgb(6, 65, 53);
+    color: rgb(6, 65, 53);
+}
+
+.caption img {
+    display: inline;
+    max-height:1.5em;
+    width: auto;
+    height: auto;
 }
 
 .caption:hover {
