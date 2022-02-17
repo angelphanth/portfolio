@@ -15,3 +15,4 @@ Here are some additional resources:
 - Smooth scrolling https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
 - Carousel https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow
 - Hosting static website on Heroku https://medium.com/@winnieliang/how-to-run-a-simple-html-css-javascript-application-on-heroku-4e664c541b0b
+- Github icon https://findicons.com/icon/607880/github
