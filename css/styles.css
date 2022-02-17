@@ -392,12 +392,12 @@ a {
     font-size: 18px;
 }
 
-.caption a {
+.caption-h3 a {
     border-bottom:0.2em solid rgb(6, 65, 53);
     color: rgb(6, 65, 53);
 }
 
-.caption img {
+.caption-h3 img {
     display: inline;
     max-height:1.5em;
     width: auto;
