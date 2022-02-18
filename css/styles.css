@@ -110,6 +110,7 @@ a {
     padding: 30px;
     color: black;
     text-align: start;
+    opacity: 1;
 }
   
 .title h1 {
@@ -148,10 +149,10 @@ a {
       opacity: 1;
 }
 
-/* #home:hover {
+#home:hover {
     opacity: 1;
     transition: all 1s ease-in-out;
-} */
+}
 
 #home h1:hover {
     font-weight: bolder;
