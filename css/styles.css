@@ -99,7 +99,7 @@ a {
     justify-content: flex-end;
     height: 50vh;
     width: 100%;
-    opacity: 0.75;   
+    opacity: 1;   
     transition: all 1s ease-in-out;
 }
 
@@ -135,7 +135,7 @@ a {
   
 #home::before {    
       content: "";
-      background-image: url("../assets/IMG_2708c.jpeg");
+      background-image: url("../assets/IMG_2708c_smaller.jpeg");
       background-color: white;
       background-repeat: no-repeat;
       background-size: contain;
@@ -145,13 +145,13 @@ a {
       bottom: 0px;
       left: 0px;
       /* width: 50vw; */
-      opacity: 0.75;
+      opacity: 1;
 }
 
-#home:hover {
+/* #home:hover {
     opacity: 1;
     transition: all 1s ease-in-out;
-}
+} */
 
 #home h1:hover {
     font-weight: bolder;
@@ -461,6 +461,10 @@ a {
         float: none;
     }
 
+    #home::before {
+        opacity:0.75; 
+    }
+
 }
 
 /* When mobile */
@@ -488,12 +492,9 @@ a {
         opacity: 1;
     }
 
-    #title h2 {
-        text-shadow: 1px 1px rgb(11, 29, 0);
-    }
-
     #home::before {    
         background-size: cover;
+        opacity: 0.75;
     }
 
     .slideshow-container {
@@ -523,12 +524,18 @@ a {
     }
 
     .title {
-        color: white;
+        color: black;
+        /* text-shadow: 2px 2px 3px pink; */
     }
       
     .title h1 {
-        color: white;
-        font-size:30px;
+        font-size:35px;
+        text-shadow: 2px 2px 3px white;
+    }
+
+    .title h2 {
+        padding-top: 30px; 
+        /* text-shadow: 2px 2px 3px pink; */
     }
  
     .nav-icon {
@@ -551,4 +558,5 @@ linking https://openclassrooms.com/en/courses/2479876-build-your-website-with-ht
 smooth scroll https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
 overlay cards https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity
 carousel https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow
+Github icon https://findicons.com/icon/607880/github
 */
