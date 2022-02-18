@@ -493,9 +493,10 @@ a {
         opacity: 1;
     }
 
-    #home::before {    
+    #home::before {
+        margin-top: -80px;    
         background-size: cover;
-        opacity: 0.75;
+        opacity: 1;
     }
 
     .slideshow-container {
@@ -525,8 +526,8 @@ a {
     }
 
     .title {
+        padding-top: 105%;
         color: black;
-        /* text-shadow: 2px 2px 3px pink; */
     }
       
     .title h1 {
